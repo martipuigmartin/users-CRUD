@@ -6,6 +6,9 @@ use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
 {
+    /**
+     * > Create 10 fake users
+     */
     public function run()
     {
         \App\Models\User::factory(10)->create();

@@ -7,6 +7,9 @@ use Illuminate\Support\Str;
 
 class UserFactory extends Factory
 {
+    /**
+     * It returns an array of fake data that can be used to create a new user
+     */
     public function definition()
     {
         return [
