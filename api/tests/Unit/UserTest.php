@@ -40,7 +40,7 @@ class UserTest extends TestCase
     }
 
     /**
-     * We create a user, then we update it with a random email address, password and a name of 'test'. We're asserting that the status code is 200
+     * We create a user, then we update it with a random email address, password and a name. We're asserting that the status code is 200
      */
     public function test_update_user()
     {
