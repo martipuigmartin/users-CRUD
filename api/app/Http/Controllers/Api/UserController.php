@@ -17,15 +17,6 @@ class UserController extends Controller
     }
 
     /**
-     * The `store` function creates a new user with the data from the request and saves it to the database
-     */
-    public function store(Request $request)
-    {
-        $user = User::create($request->all());
-        $user->save();
-    }
-
-    /**
      * > This function will return a user with the given id
      */
     public function show($id)
