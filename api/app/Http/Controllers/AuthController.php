@@ -10,6 +10,9 @@ use Illuminate\Support\Facades\Validator;
 
 class AuthController extends Controller
 {
+    /**
+     * It creates a new user, creates a token for that user, and returns the user and the token
+     */
     public function register(Request $request)
     {
         $validator = Validator::make($request->all(), [
@@ -33,6 +36,9 @@ class AuthController extends Controller
         return response()->json(['data' => $user, 'access_token' => $token, 'token_type' => 'Bearer']);
     }
 
+    /**
+     * If the user's credentials are valid, create a token and return it to the user
+     */
     public function login(Request $request)
     {
         if (!Auth::attempt($request->only('email', 'password'))) {
@@ -51,6 +57,9 @@ class AuthController extends Controller
         ]);
     }
 
+    /**
+     * It deletes all the tokens associated with the user
+     */
     public function logout()
     {
         auth()->user()->tokens()->delete();

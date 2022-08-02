@@ -4,14 +4,10 @@
     <list default="true" id="79a4e2ca-7cb3-465d-8b90-929c907da27a" name="Changes" comment="comment arrangement">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/app/Http/Controllers/Api/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/app/Http/Controllers/Api/UserController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/app/Models/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/api/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/api/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/database/factories/UserFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/database/factories/UserFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/app/Http/Controllers/AuthController.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/app/Http/Controllers/AuthController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/database/migrations/2019_12_14_000001_create_personal_access_tokens_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/database/migrations/2019_12_14_000001_create_personal_access_tokens_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/routes/api.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/tests/Unit/UserTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/tests/Unit/UserTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,7 +28,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="laravel-sanctum-auth" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -47,12 +43,12 @@
               <option name="branches">
                 <list>
                   <RecentBranch>
-                    <option name="branchName" value="laravel-sanctum-auth" />
-                    <option name="lastUsedInstant" value="1659446427" />
+                    <option name="branchName" value="master" />
+                    <option name="lastUsedInstant" value="1659466491" />
                   </RecentBranch>
                   <RecentBranch>
-                    <option name="branchName" value="master" />
-                    <option name="lastUsedInstant" value="1659446426" />
+                    <option name="branchName" value="laravel-sanctum-auth" />
+                    <option name="lastUsedInstant" value="1659466480" />
                   </RecentBranch>
                 </list>
               </option>
@@ -217,6 +213,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="HTTP Request.rest-api_2 | #1" />
+        <item itemvalue="HTTP Request.rest-api_2 | #1" />
         <item itemvalue="HTTP Request.rest-api_2 | #1" />
       </list>
     </recent_temporary>

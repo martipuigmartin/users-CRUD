@@ -9,11 +9,13 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
+/* A shorthand for creating routes */
 Route::controller(AuthController::class)->group(function () {
     Route::post('/register', [AuthController::class, 'register']);
     Route::post('/', [AuthController::class, 'login']);
 });
 
+/* Encapsulation of the routes inside middleware using sanctum */
 Route::middleware(['auth:sanctum'])->group(function () {
     Route::get('/logout', [AuthController::class, 'logout']);
 

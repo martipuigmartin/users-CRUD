@@ -17,7 +17,7 @@ class UserController extends Controller
     }
 
     /**
-     * > This function will return a user with the given id
+     * This function will return a user with the given id
      */
     public function show($id)
     {
