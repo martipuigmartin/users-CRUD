@@ -7,7 +7,7 @@ use Illuminate\Database\Seeder;
 class DatabaseSeeder extends Seeder
 {
     /**
-     * > Create 10 fake users
+     * Create 10 fake users
      */
     public function run()
     {
