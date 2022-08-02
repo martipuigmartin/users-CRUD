@@ -1,12 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="79a4e2ca-7cb3-465d-8b90-929c907da27a" name="Changes" comment="delete DetailUser.jsx">
+    <list default="true" id="79a4e2ca-7cb3-465d-8b90-929c907da27a" name="Changes" comment="comment arrangement">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/app/Http/Controllers/Api/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/app/Http/Controllers/Api/UserController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/app/Models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/api/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/api/composer.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/database/factories/UserFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/database/factories/UserFactory.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/tests/Unit/CategoryTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/tests/Unit/UserTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/database/migrations/2019_12_14_000001_create_personal_access_tokens_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/database/migrations/2019_12_14_000001_create_personal_access_tokens_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/routes/api.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/tests/Unit/UserTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/tests/Unit/UserTest.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,10 +30,38 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitToolBoxStore">
     <option name="projectConfigVersion" value="5" />
+    <option name="recentBranches">
+      <RecentBranches>
+        <option name="branchesForRepo">
+          <list>
+            <RecentBranchesForRepo>
+              <option name="branches">
+                <list>
+                  <RecentBranch>
+                    <option name="branchName" value="laravel-sanctum-auth" />
+                    <option name="lastUsedInstant" value="1659446427" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="master" />
+                    <option name="lastUsedInstant" value="1659446426" />
+                  </RecentBranch>
+                </list>
+              </option>
+              <option name="repositoryRootUrl" value="file://$PROJECT_DIR$" />
+            </RecentBranchesForRepo>
+          </list>
+        </option>
+      </RecentBranches>
+    </option>
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="jar://$APPLICATION_HOME_DIR$/plugins/restClient/lib/restClient.jar!/com/intellij/ws/rest/client/requests/collection/post-requests.http" root0="SKIP_INSPECTION" />
@@ -178,31 +211,13 @@
       <recent name="C:\Laragon\www\users-CRUD" />
     </key>
   </component>
-  <component name="RunManager" selected="HTTP Request.rest-api_1 | #1">
-    <configuration name="post-requests | Send POST request with body as parameters" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="jar://$APPLICATION_HOME_DIR$/plugins/restClient/lib/restClient.jar!/com/intellij/ws/rest/client/requests/collection/post-requests.http" index="2" requestIdentifier="Send POST request with body as parameters" runType="Run single request">
+  <component name="RunManager">
+    <configuration name="rest-api_2 | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/rest-api_2.http" requestIdentifier="#1" runType="Run single request">
       <method v="2" />
     </configuration>
-    <configuration name="post-requests | Send POST request with json body" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="jar://$APPLICATION_HOME_DIR$/plugins/restClient/lib/restClient.jar!/com/intellij/ws/rest/client/requests/collection/post-requests.http" requestIdentifier="Send POST request with json body" runType="Run single request">
-      <method v="2" />
-    </configuration>
-    <configuration name="rest-api | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/rest-api.http" requestIdentifier="#1" runType="Run single request">
-      <method v="2" />
-    </configuration>
-    <configuration name="rest-api_1 | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/rest-api_1.http" requestIdentifier="#1" runType="Run single request">
-      <method v="2" />
-    </configuration>
-    <list>
-      <item itemvalue="HTTP Request.post-requests | Send POST request with body as parameters" />
-      <item itemvalue="HTTP Request.post-requests | Send POST request with json body" />
-      <item itemvalue="HTTP Request.rest-api | #1" />
-      <item itemvalue="HTTP Request.rest-api_1 | #1" />
-    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="HTTP Request.rest-api_1 | #1" />
-        <item itemvalue="HTTP Request.post-requests | Send POST request with body as parameters" />
-        <item itemvalue="HTTP Request.post-requests | Send POST request with json body" />
-        <item itemvalue="HTTP Request.rest-api | #1" />
+        <item itemvalue="HTTP Request.rest-api_2 | #1" />
       </list>
     </recent_temporary>
   </component>
@@ -216,7 +231,7 @@
       <updated>1659368493537</updated>
       <workItem from="1659368496930" duration="9912000" />
       <workItem from="1659381963994" duration="9431000" />
-      <workItem from="1659433348740" duration="5006000" />
+      <workItem from="1659433348740" duration="17437000" />
     </task>
     <task id="LOCAL-00001" summary="first commit!">
       <created>1659372836282</created>
@@ -281,7 +296,28 @@
       <option name="project" value="LOCAL" />
       <updated>1659434679256</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="delete DetailUser.jsx">
+      <created>1659439695974</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1659439695974</updated>
+    </task>
+    <task id="LOCAL-00011" summary="comment arrangement">
+      <created>1659439755499</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1659439755499</updated>
+    </task>
+    <task id="LOCAL-00012" summary="comment arrangement">
+      <created>1659439790441</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1659439790441</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -305,6 +341,7 @@
     <MESSAGE value="create react application" />
     <MESSAGE value="install tailwind CSS" />
     <MESSAGE value="delete DetailUser.jsx" />
-    <option name="LAST_COMMIT_MESSAGE" value="delete DetailUser.jsx" />
+    <MESSAGE value="comment arrangement" />
+    <option name="LAST_COMMIT_MESSAGE" value="comment arrangement" />
   </component>
 </project>

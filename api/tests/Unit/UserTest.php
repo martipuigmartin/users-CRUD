@@ -18,19 +18,6 @@ class UserTest extends TestCase
     }
 
     /**
-     * We're sending a POST request to the `/api/users` endpoint with a JSON payload containing the required fields for a
-     * user
-     */
-    public function test_store_user()
-    {
-        $this->post('/api/users', [
-            'name' => 'Testing Store User',
-            'email' => Str::random(10) . '@example.com',
-            'password' => bcrypt(Str::random(10)),
-        ])->assertStatus(200);
-    }
-
-    /**
      * This function tests that the show user route returns a 200 status code
      */
     public function test_show_user()
