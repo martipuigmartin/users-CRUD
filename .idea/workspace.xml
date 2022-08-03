@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="79a4e2ca-7cb3-465d-8b90-929c907da27a" name="Changes" comment="comment arrangement">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/app/Http/Controllers/Api/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/app/Http/Controllers/Api/UserController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/app/Http/Controllers/AuthController.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/app/Http/Controllers/AuthController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/database/migrations/2019_12_14_000001_create_personal_access_tokens_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/database/migrations/2019_12_14_000001_create_personal_access_tokens_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/routes/api.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/routes/web.php" afterDir="false" />
-    </list>
+    <list default="true" id="79a4e2ca-7cb3-465d-8b90-929c907da27a" name="Changes" comment="layout done" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -28,7 +21,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="laravel-sanctum-auth" />
+        <entry key="$PROJECT_DIR$" value="front_end_layout" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -43,12 +36,16 @@
               <option name="branches">
                 <list>
                   <RecentBranch>
-                    <option name="branchName" value="master" />
-                    <option name="lastUsedInstant" value="1659466491" />
+                    <option name="branchName" value="cors_issue" />
+                    <option name="lastUsedInstant" value="1659521244" />
                   </RecentBranch>
                   <RecentBranch>
-                    <option name="branchName" value="laravel-sanctum-auth" />
-                    <option name="lastUsedInstant" value="1659466480" />
+                    <option name="branchName" value="front_end_layout" />
+                    <option name="lastUsedInstant" value="1659519454" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="master" />
+                    <option name="lastUsedInstant" value="1659466491" />
                   </RecentBranch>
                 </list>
               </option>
@@ -185,7 +182,9 @@
     </include_path>
   </component>
   <component name="ProjectId" id="2ClDtHHOzFLG22sW9r56PMqAu4X" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -204,6 +203,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Laragon\www\users-CRUD\client\src\components" />
       <recent name="C:\Laragon\www\users-CRUD" />
     </key>
   </component>
@@ -230,6 +230,9 @@
       <workItem from="1659368496930" duration="9912000" />
       <workItem from="1659381963994" duration="9431000" />
       <workItem from="1659433348740" duration="17437000" />
+      <workItem from="1659470257182" duration="1640000" />
+      <workItem from="1659471917106" duration="129000" />
+      <workItem from="1659516315286" duration="3312000" />
     </task>
     <task id="LOCAL-00001" summary="first commit!">
       <created>1659372836282</created>
@@ -315,7 +318,21 @@
       <option name="project" value="LOCAL" />
       <updated>1659439790441</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="api done">
+      <created>1659467273190</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1659467273190</updated>
+    </task>
+    <task id="LOCAL-00014" summary="layout done">
+      <created>1659521216439</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1659521216439</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -340,6 +357,8 @@
     <MESSAGE value="install tailwind CSS" />
     <MESSAGE value="delete DetailUser.jsx" />
     <MESSAGE value="comment arrangement" />
-    <option name="LAST_COMMIT_MESSAGE" value="comment arrangement" />
+    <MESSAGE value="api done" />
+    <MESSAGE value="layout done" />
+    <option name="LAST_COMMIT_MESSAGE" value="layout done" />
   </component>
 </project>
