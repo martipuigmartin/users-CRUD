@@ -28,6 +28,7 @@ export const Register = () => {
         });
     };
 
+    // TODO: Add styles to the form and some comments in the component
     return (
         <div className="row justify-content-center">
             <div className="col-md-8">
