@@ -25,6 +25,11 @@ class AuthController extends Controller
             return response()->json($validator->errors());
         }
 
+        $user = User::where('email', $request->email)->firstOrFail();
+        if ($user) {
+            return response()->json(['error' => 'User already exists'], 400);
+        }
+
         $user = User::create([
             'name' => $request->name,
             'email' => $request->email,
@@ -33,7 +38,7 @@ class AuthController extends Controller
 
         $token = $user->createToken('auth_token')->plainTextToken;
 
-        return response()->json(['data' => $user, 'access_token' => $token, 'token_type' => 'Bearer']);
+        return response()->json(['data' => $user, 'access_token' => $token, 'token_type' => 'Bearer'], 200);
     }
 
     /**
@@ -63,6 +68,6 @@ class AuthController extends Controller
     public function logout()
     {
         auth()->user()->tokens()->delete();
-        return response()->json(['message' => 'Successfully logged out and deleted the token']);
+        return response()->json(['message' => 'Successfully logged out and deleted the token'], 200);
     }
 }

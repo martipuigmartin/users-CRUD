@@ -61,7 +61,7 @@ export const Register = (props) => {
                                 <div className="col-md-6">
                                     <input id="password" type="password"
                                            className="form-control"
-                                           name="password" required autoComplete="new-password" value={password} onChange={e => setPassword(e.target.value)} />
+                                           name="password" required autoComplete="new-password" value={password} minLength={6} onChange={e => setPassword(e.target.value)} />
                                     {renderFieldError('password')}
                                 </div>
                             </div>

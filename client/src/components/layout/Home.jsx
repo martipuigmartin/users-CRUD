@@ -1,12 +1,12 @@
 import React from "react";
 import Navbar from "../Navbar";
 
-export const Home = ({ children }) => {
+export const Home = ({children}) => {
     return (
         <div>
-            <Navbar />
+            <Navbar/>
             <div className="container">
-                { children }
+                {children}
             </div>
         </div>
     );

@@ -2,7 +2,7 @@ import './App.css';
 
 import {Route, Routes} from 'react-router-dom';
 
-import {Home} from "./components/Layout/Home";
+import {Home} from "./components/layout/Home";
 import {Login} from "./components/pages/Login";
 import {Register} from "./components/pages/Register";
 
