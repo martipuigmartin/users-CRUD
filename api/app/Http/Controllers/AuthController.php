@@ -15,6 +15,11 @@ class AuthController extends Controller
      */
     public function register(Request $request)
     {
+        $user = User::where('email', $request->email)->first();
+        if ($user) {
+            return response()->json(['error' => 'User already exists'], 400);
+        }
+
         $validator = Validator::make($request->all(), [
             'name' => 'required|string|max:255',
             'email' => 'required|string|email|max:255|unique:users',
@@ -23,11 +28,6 @@ class AuthController extends Controller
 
         if ($validator->fails()) {
             return response()->json($validator->errors());
-        }
-
-        $user = User::where('email', $request->email)->firstOrFail();
-        if ($user) {
-            return response()->json(['error' => 'User already exists'], 400);
         }
 
         $user = User::create([

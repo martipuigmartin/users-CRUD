@@ -1,40 +1,29 @@
-import React, {useState} from "react";
-import {useForm} from "../resources/hooks/useForm";
+import React, {useContext, useEffect, useState} from "react";
 import axios from "axios";
+import {useNavigate} from "react-router-dom";
 
 const endPoint = 'http://localhost:8000/api';
 
 export const Login = (props) => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
-    const {setErrors, renderFieldError, message, setMessage, navigate} = useForm();
+    const navigate = useNavigate()
 
     const makeRequest = (e) => {
         e.preventDefault();
-        setErrors(null);
-        setMessage('');
+
         const userData = {
             email,
             password
         };
-        axios.post(endPoint, userData, {headers: {'Accept': 'application/json'}}).then(response => {
-            console.log(response.data.user);
-            if (response.data.user) {
-                alert('Login success');
-                navigate('/');
-            }
+        axios.post(endPoint, userData, {headers: {'Accept': 'application/json'}}).then(() => {
+            alert("Login success");
+            // TODO: change route to /users
+            navigate('/register');
         }).catch(error => {
-            console.log(error);
-            if (error.response) {
-                if (error.response.data.message) {
-                    setMessage(error.response.data.message);
-                }
-                if (error.response.data.errors) {
-                    setErrors(error.response.data.errors);
-                }
-            }
+            alert("Login failed");
         });
-    };
+    }
 
     return (
         <div className="row justify-content-center">
@@ -42,9 +31,6 @@ export const Login = (props) => {
                 <div className="card">
                     <div className="card-header">Login</div>
                     <div className="card-body">
-                        {
-                            message && <div className="alert alert-danger">{message}</div>
-                        }
                         <form method="POST" action="#" onSubmit={makeRequest}>
                             <div className="row mb-3">
                                 <label htmlFor="email" className="col-md-4 col-form-label text-md-end">Email
@@ -54,7 +40,6 @@ export const Login = (props) => {
                                            className="form-control" name="email"
                                            required autoComplete="email" autoFocus value={email}
                                            onChange={e => setEmail(e.target.value)}/>
-                                    {renderFieldError('email')}
                                 </div>
                             </div>
                             <div className="row mb-3">
@@ -63,9 +48,8 @@ export const Login = (props) => {
                                 <div className="col-md-6">
                                     <input id="password" type="password"
                                            className="form-control" name="password"
-                                           required autoComplete="current-password"   value={password}
+                                           required autoComplete="current-password" value={password}
                                            onChange={e => setPassword(e.target.value)}/>
-                                    {renderFieldError('password')}
                                 </div>
                             </div>
                             <div className="row mb-0">
@@ -81,4 +65,4 @@ export const Login = (props) => {
             </div>
         </div>
     );
-};
+}

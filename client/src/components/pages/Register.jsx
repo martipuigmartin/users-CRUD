@@ -1,6 +1,6 @@
 import {useState} from "react";
-import {useForm} from "../resources/hooks/useForm";
 import axios from "axios";
+import {useNavigate} from "react-router-dom";
 
 const endPoint = 'http://localhost:8000/api';
 
@@ -8,28 +8,20 @@ export const Register = (props) => {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
-    const { setErrors, renderFieldError, navigate } = useForm();
+    const navigate = useNavigate();
 
     const makeRequest = (e) => {
         e.preventDefault();
-        setErrors(null);
+
         axios.post(`${endPoint}/register`, {
             name,
             email,
             password,
-        }).then(response => {
-            console.log(response.data.user);
-            if(response.data.user) {
-                alert("Register success");
-                navigate('/');
-            }
-        }).catch(error => {
-            console.log(error);
-            if(error.response) {
-                if (error.response.data.errors) {
-                    setErrors(error.response.data.errors);
-                }
-            }
+        }).then(() => {
+            alert("Register success");
+            navigate('/');
+        }).catch(() => {
+            alert("Register failed, user already exists");
         });
     };
 
@@ -44,16 +36,16 @@ export const Register = (props) => {
                                 <label className="col-md-4 col-form-label text-md-end">Name</label>
                                 <div className="col-md-6">
                                     <input id="name" type="text"
-                                           className="form-control" name="name" required autoComplete="name" autoFocus value={name} onChange={e => setName(e.target.value)} />
-                                    {renderFieldError('name')}
+                                           className="form-control" name="name" required autoComplete="name" autoFocus
+                                           value={name} onChange={e => setName(e.target.value)}/>
                                 </div>
                             </div>
                             <div className="row mb-3">
                                 <label className="col-md-4 col-form-label text-md-end">E-Mail Address</label>
                                 <div className="col-md-6">
                                     <input id="email" type="email"
-                                           className="form-control" name="email" required autoComplete="email" value={email} onChange={e => setEmail(e.target.value)} />
-                                    {renderFieldError('email')}
+                                           className="form-control" name="email" required autoComplete="email"
+                                           value={email} onChange={e => setEmail(e.target.value)}/>
                                 </div>
                             </div>
                             <div className="row mb-3">
@@ -61,8 +53,8 @@ export const Register = (props) => {
                                 <div className="col-md-6">
                                     <input id="password" type="password"
                                            className="form-control"
-                                           name="password" required autoComplete="new-password" value={password} minLength={6} onChange={e => setPassword(e.target.value)} />
-                                    {renderFieldError('password')}
+                                           name="password" required autoComplete="new-password" value={password}
+                                           minLength={6} onChange={e => setPassword(e.target.value)}/>
                                 </div>
                             </div>
                             <div className="row mb-0">
