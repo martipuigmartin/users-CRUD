@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom';
 
 const endPoint = 'http://localhost:8000/api';
 
-export const ShowUsers = () => {
+export const Show = () => {
     const [users, setUsers] = useState([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);

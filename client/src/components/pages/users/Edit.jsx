@@ -4,7 +4,7 @@ import {Link, useNavigate, useParams} from 'react-router-dom';
 
 const endPoint = 'http://localhost:8000/api';
 
-export const EditUser = () => {
+export const Edit = () => {
     const [user, setUser] = useState({});
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);

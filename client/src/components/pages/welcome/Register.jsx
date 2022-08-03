@@ -4,7 +4,7 @@ import {useNavigate} from "react-router-dom";
 
 const endPoint = 'http://localhost:8000/api';
 
-export const Register = (props) => {
+export const Register = () => {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
@@ -31,7 +31,7 @@ export const Register = (props) => {
                 <div className="card">
                     <div className="card-header">Register</div>
                     <div className="card-body">
-                        <form method="POST" action="#" onSubmit={makeRequest}>
+                        <form method="POST" action="client/src/components/pages/welcome/Register#" onSubmit={makeRequest}>
                             <div className="row mb-3">
                                 <label className="col-md-4 col-form-label text-md-end">Name</label>
                                 <div className="col-md-6">

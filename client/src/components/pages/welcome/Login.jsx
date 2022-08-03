@@ -4,7 +4,7 @@ import {useNavigate} from "react-router-dom";
 
 const endPoint = 'http://localhost:8000/api';
 
-export const Login = (props) => {
+export const Login = () => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const navigate = useNavigate()
@@ -32,7 +32,7 @@ export const Login = (props) => {
                 <div className="card">
                     <div className="card-header">Login</div>
                     <div className="card-body">
-                        <form method="POST" action="#" onSubmit={makeRequest}>
+                        <form method="POST" action="client/src/components/pages/welcome/Login#" onSubmit={makeRequest}>
                             <div className="row mb-3">
                                 <label htmlFor="email" className="col-md-4 col-form-label text-md-end">Email
                                     Address</label>
