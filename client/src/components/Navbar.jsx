@@ -1,34 +1,45 @@
 import React from "react";
+
 import {Link, useNavigate} from "react-router-dom";
 
-function Navbar() {
+export const Navbar = () => {
+    /* It checks if the user is logged in */
     const isLoggedIn = sessionStorage.getItem("token") !== null;
     const navigate = useNavigate();
 
+    /**
+     * It removes the token from the session storage and navigates to the home page
+     */
     const logout = () => {
         sessionStorage.removeItem("token");
         navigate("/");
     }
 
     return (
-        <nav className="navbar navbar-expand-md navbar-light bg-white shadow-sm">
-            <div className="container">
-                <div className="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul className="navbar-nav ms-auto">
-                        {isLoggedIn ? (
-                            <li className="nav-item" onClick={logout}>
-                                Logout
+        <header className="p-4 dark:bg-gray-900 dark:text-gray-100">
+            <div className="container flex justify-between h-16 mx-auto">
+                <a rel="noopener noreferrer" href="#" aria-label="Back to homepage" className="flex items-center p-2">
+                    Users CRUD
+                </a>
+                <ul className="items-stretch hidden space-x-3 md:flex">
+                    {isLoggedIn ? (
+                        <li className="flex" onClick={logout}>
+                            <a className="flex items-center px-4 -mb-1 border-b-2 dark:border-transparent">Logout</a>
+                        </li>
+                    ) : (
+                        <>
+                            <li className="flex">
+                                <Link to="/"
+                                      className="flex items-center px-4 -mb-1 border-b-2 dark:border-transparent">Login</Link>
                             </li>
-                        ) : (
-                            <li className="nav-item">
-                                <Link className="nav-link" to="/">Login</Link>
-                                <Link className="nav-link" to="/register">Register</Link>
+                            <li className="flex">
+                                <Link to="/register"
+                                      className="flex items-center px-4 -mb-1 border-b-2 dark:border-transparent">Registration</Link>
                             </li>
-                        )}
-                    </ul>
-                </div>
+                        </>
+                    )}
+                </ul>
             </div>
-        </nav>
+        </header>
     );
 }
-export default Navbar;

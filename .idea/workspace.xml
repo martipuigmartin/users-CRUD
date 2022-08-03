@@ -3,9 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="79a4e2ca-7cb3-465d-8b90-929c907da27a" name="Changes" comment="better structure of the project">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/app/Http/Controllers/Api/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/app/Http/Controllers/Api/UserController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Navbar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Navbar.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/layout/Home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/layout/Home.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/pages/users/Detail.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/pages/users/Detail.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/pages/users/Edit.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/pages/users/Edit.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/pages/users/Show.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/pages/users/Show.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/pages/welcome/Login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/pages/welcome/Login.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/pages/welcome/Register.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/pages/welcome/Register.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -243,7 +247,7 @@
       <workItem from="1659470257182" duration="1640000" />
       <workItem from="1659471917106" duration="129000" />
       <workItem from="1659516315286" duration="3312000" />
-      <workItem from="1659526968783" duration="13814000" />
+      <workItem from="1659526968783" duration="21185000" />
     </task>
     <task id="LOCAL-00001" summary="first commit!">
       <created>1659372836282</created>
@@ -406,7 +410,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659547558420</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="better structure of the project">
+      <created>1659548000886</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1659548000886</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

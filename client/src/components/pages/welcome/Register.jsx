@@ -1,5 +1,6 @@
-import {useState} from "react";
+import React, {useState} from "react";
 import axios from "axios";
+
 import {useNavigate} from "react-router-dom";
 
 const endPoint = 'http://localhost:8000/api';
@@ -9,6 +10,8 @@ export const Register = () => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const navigate = useNavigate();
+    /* It checks if the user is logged in */
+    const isLoggedIn = sessionStorage.getItem("token") !== null;
 
     const makeRequest = (e) => {
         e.preventDefault();

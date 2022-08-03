@@ -1,66 +1,68 @@
 import React, {useState, useEffect} from 'react';
 import axios from 'axios';
+
 import {Link} from 'react-router-dom';
 
 const endPoint = 'http://localhost:8000/api';
 
 export const Show = () => {
     const [users, setUsers] = useState([]);
-    const [loading, setLoading] = useState(true);
-    const [error, setError] = useState(null);
 
+    /* A hook that is called after every render */
     useEffect(() => {
         axios.get(`${endPoint}/users`, {headers: {'Authorization': `Bearer ${sessionStorage.getItem('token')}`}})
             .then(response => {
                 setUsers(response.data);
-                setLoading(false);
             })
-            .catch(err => {
-                    setError(err);
-                    setLoading(false);
-                }
-            );
     }, []);
 
+    /**
+     * It deletes a user from the database and then filters the users array to remove the deleted user
+     */
     const deleteUser = async (id) => {
-        setLoading(true);
         try {
             await axios.delete(`${endPoint}/users/${id}`, {headers: {'Authorization': `Bearer ${sessionStorage.getItem('token')}`}});
             setUsers(users.filter(user => user.id !== id));
-            setLoading(false);
         } catch (err) {
-            setError(err);
-            setLoading(false);
+            console.log(err);
         }
     }
 
     return (
-        loading ? <p>Loading...</p> :
-            error ? <p>{error.message}</p> :
-                <div>
-                    <h1>Users</h1>
-                    <table>Users
-                        <thead>
-                        <tr>
-                            <th>Name</th>
-                            <th>Email</th>
-                            <th>Actions</th>
+        <div className="container p-2 mx-auto sm:p-4 dark:text-gray-100">
+            <h2 className="mb-4 text-2xl font-semibold leading-tight text-gray-900">User list</h2>
+            <div className="overflow-x-auto">
+                <table className="min-w-full text-xs">
+                    <tbody>
+                    {users.map(user => (
+                        <tr key={user.id} className="border-b border-opacity-20 dark:border-gray-700 dark:bg-gray-900">
+                            <td className="p-3">
+                                <p>{user.name}</p>
+                            </td>
+                            <td className="p-3 text-right">
+                                <p>{user.email}</p>
+                            </td>
+                            <td className="p-3 text-right">
+						<span className="px-3 py-1 font-semibold rounded-md dark:bg-violet-400 dark:text-gray-900">
+							 <Link to={`/users/edit/${user.id}`}>Edit</Link>
+						</span>
+                            </td>
+                            <td className="p-3 text-right">
+						<span className="px-3 py-1 font-semibold rounded-md dark:bg-green-400 dark:text-gray-900">
+							<Link to={`/users/details/${user.id}`}>Details</Link>
+						</span>
+                            </td>
+                            <td className="p-3 text-right">
+						<span className="px-3 py-1 font-semibold rounded-md dark:bg-red-400 dark:text-gray-900">
+							<button onClick={() => deleteUser(user.id)}>Delete</button>
+						</span>
+                            </td>
                         </tr>
-                        </thead>
-                        <tbody>
-                        {users.map(user => (
-                            <tr key={user.id}>
-                                <td>{user.name}</td>
-                                <td>{user.email}</td>
-                                <td>
-                                    <Link to={`/users/edit/${user.id}`}>Edit</Link>
-                                    <Link to={`/users/details/${user.id}`}>Details</Link>
-                                    <button onClick={() => deleteUser(user.id)}>Delete</button>
-                                </td>
-                            </tr>
-                        ))}
-                        </tbody>
-                    </table>
-                </div>
+                    ))}
+                    </tbody>
+                </table>
+            </div>
+        </div>
     );
 }
+
