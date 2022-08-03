@@ -12,7 +12,7 @@ export const UserDetails = () => {
     const {id} = useParams();
 
     useEffect(() => {
-        axios.get(`${endPoint}/users/${id}`)
+        axios.get(`${endPoint}/users/${id}`, {headers: {'Authorization': `Bearer ${sessionStorage.getItem('token')}`}})
             .then(response => {
                 setUser(response.data);
                 setLoading(false);
@@ -31,7 +31,7 @@ export const UserDetails = () => {
                     <h1>User Details</h1>
                     <p>Name: {user.name}</p>
                     <p>Email: {user.email}</p>
-                    <Link to="/">Back</Link>
+                    <Link to="/users">Back</Link>
                 </div>
     )
 }

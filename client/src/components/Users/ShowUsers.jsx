@@ -25,7 +25,7 @@ export const ShowUsers = () => {
     const deleteUser = async (id) => {
         setLoading(true);
         try {
-            await axios.delete(`${endPoint}/users/${id}`);
+            await axios.delete(`${endPoint}/users/${id}`, {headers: {'Authorization': `Bearer ${sessionStorage.getItem('token')}`}});
             setUsers(users.filter(user => user.id !== id));
             setLoading(false);
         } catch (err) {

@@ -19,15 +19,15 @@ export const EditUser = () => {
             name: e.target.name.value,
             email: e.target.email.value,
             password: e.target.password.value
-        }) : await axios.put(`${endPoint}/users/${id}`, {
+        }, {headers: {'Authorization': `Bearer ${sessionStorage.getItem('token')}`}}) : await axios.put(`${endPoint}/users/${id}`, {
             name: e.target.name.value,
             email: e.target.email.value
-        });
-        navigate('/');
+        }, {headers: {'Authorization': `Bearer ${sessionStorage.getItem('token')}`}});
+        navigate('/users');
     }
 
     useEffect(() => {
-        axios.get(`${endPoint}/users/${id}`)
+        axios.get(`${endPoint}/users/${id}`, {headers: {'Authorization': `Bearer ${sessionStorage.getItem('token')}`}})
             .then(response => {
                 setUser(response.data);
                 setLoading(false);
@@ -45,13 +45,13 @@ export const EditUser = () => {
                     <h1>Edit User</h1>
                     <form onSubmit={update}>
                         <label>Name:</label>
-                        <input type="text" name="name" defaultValue={user.name}/>
+                        <input type="text" name="name" required defaultValue={user.name}/>
                         <label>Email:</label>
-                        <input type="text" name="email" defaultValue={user.email}/>
+                        <input type="email" name="email" required defaultValue={user.email}/>
                         <label>Password:</label>
-                        <input type="text" name="password" defaultValue={user.password}/>
+                        <input type="text" name="password" required/>
                         <button type="submit">Update</button>
-                        <Link to="/">Back</Link>
+                        <Link to="/users">Back</Link>
                     </form>
                 </div>
     )
