@@ -1,4 +1,4 @@
-import React, {useContext, useEffect, useState} from "react";
+import React, {useState} from "react";
 import axios from "axios";
 import {useNavigate} from "react-router-dom";
 
@@ -16,11 +16,12 @@ export const Login = (props) => {
             email,
             password
         };
-        axios.post(endPoint, userData, {headers: {'Accept': 'application/json'}}).then(() => {
-            alert("Login success");
-            // TODO: change route to /users
-            navigate('/register');
-        }).catch(error => {
+        axios.post(endPoint, userData, {headers: {'Accept': 'application/json'}}).then(response => {
+            sessionStorage.setItem('token', response.data.access_token);
+            console.log(response.data.access_token);
+            alert(response.data.message);
+            navigate('/users');
+        }).catch(() => {
             alert("Login failed");
         });
     }

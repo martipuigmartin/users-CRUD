@@ -10,7 +10,7 @@ export const ShowUsers = () => {
     const [error, setError] = useState(null);
 
     useEffect(() => {
-        axios.get(`${endPoint}/users`)
+        axios.get(`${endPoint}/users`, {headers: {'Authorization': `Bearer ${sessionStorage.getItem('token')}`}})
             .then(response => {
                 setUsers(response.data);
                 setLoading(false);
