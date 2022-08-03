@@ -12,17 +12,17 @@ export const Detail = () => {
     const {id} = useParams();
 
     useEffect(() => {
-        axios.get(`${endPoint}/users/${id}`, {headers: {'Authorization': `Bearer ${sessionStorage.getItem('token')}`}})
-            .then(response => {
-                setUser(response.data);
-                setLoading(false);
-            }).catch(err => {
-                setError(err);
-                setLoading(false);
-            }
-        );
-    }
-    , []);
+            axios.get(`${endPoint}/users/${id}`, {headers: {'Authorization': `Bearer ${sessionStorage.getItem('token')}`}})
+                .then(response => {
+                    setUser(response.data);
+                    setLoading(false);
+                }).catch(err => {
+                    setError(err);
+                    setLoading(false);
+                }
+            );
+        }
+        , []);
 
     return (
         loading ? <p>Loading...</p> :

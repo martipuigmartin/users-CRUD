@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="79a4e2ca-7cb3-465d-8b90-929c907da27a" name="Changes" comment="password update now is hashed">
-      <change beforePath="$PROJECT_DIR$/client/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Users/EditUser.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/pages/users/Edit.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Users/ShowUsers.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/pages/users/Show.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Users/UserDetails.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/pages/users/Detail.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/pages/Login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/pages/welcome/Login.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/pages/Register.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/pages/welcome/Register.jsx" afterDir="false" />
+    <list default="true" id="79a4e2ca-7cb3-465d-8b90-929c907da27a" name="Changes" comment="better structure of the project">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/app/Http/Controllers/Api/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/app/Http/Controllers/Api/UserController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/layout/Home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/layout/Home.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/pages/users/Detail.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/pages/users/Detail.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -245,7 +243,7 @@
       <workItem from="1659470257182" duration="1640000" />
       <workItem from="1659471917106" duration="129000" />
       <workItem from="1659516315286" duration="3312000" />
-      <workItem from="1659526968783" duration="13169000" />
+      <workItem from="1659526968783" duration="13814000" />
     </task>
     <task id="LOCAL-00001" summary="first commit!">
       <created>1659372836282</created>
@@ -401,7 +399,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659547144414</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="better structure of the project">
+      <created>1659547558420</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1659547558420</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -433,6 +438,7 @@
     <MESSAGE value="auth ok in show users, pending to change axios petitions in EditUser and UserDetails" />
     <MESSAGE value="auth and navbar routing ok" />
     <MESSAGE value="password update now is hashed" />
-    <option name="LAST_COMMIT_MESSAGE" value="password update now is hashed" />
+    <MESSAGE value="better structure of the project" />
+    <option name="LAST_COMMIT_MESSAGE" value="better structure of the project" />
   </component>
 </project>

@@ -31,6 +31,11 @@ class UserController extends Controller
      */
     public function update(Request $request, $id)
     {
+        /* Checking if the email already exists in the database */
+        if (User::where('email', $request->email)->where('id', '!=', $id)->exists()) {
+            return response()->json(['error' => 'Email already exists'], 400);
+        }
+
         $user = User::find($id);
         $user->update([
             'name' => $request->name,
