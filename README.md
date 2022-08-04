@@ -30,7 +30,7 @@ DB_PASSWORD=
 4. Executem la comanda **php artisan key:generate**.
 5. Si no es troba creada, crearem la base de dades users_db
 6. Executem la comanda **php artisan migrate:fresh --seed**. Aquesta comanda crearà l'estructura de la base de dades i l'inicialitzarà amb dades.
-7. Executarem la comanda **php artisan test**. Aquesta comanda executarà els tests de l'API.
+7. Executarem la comanda **php artisan test tests\Unit\UserTest.php**. Aquesta comanda executarà els tests de l'API.
 8. Executem la comanda **php artisan serve**. Aquesta comanda executarà l'API en mode de desenvolupament.
 9. L'API ja està disponible a la ruta **http://localhost:8000**.
 
