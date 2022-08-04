@@ -18,7 +18,7 @@ export const Navbar = () => {
     return (
         <header className="p-4 dark:bg-gray-900 dark:text-gray-100">
             <div className="container flex justify-between h-16 mx-auto">
-                <a rel="noopener noreferrer" href="#" aria-label="Back to homepage" className="flex items-center p-2">
+                <a className="flex items-center p-2">
                     Users CRUD
                 </a>
                 <ul className="items-stretch hidden space-x-3 md:flex">

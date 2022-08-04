@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="79a4e2ca-7cb3-465d-8b90-929c907da27a" name="Changes" comment="better structure of the project">
+    <list default="true" id="79a4e2ca-7cb3-465d-8b90-929c907da27a" name="Changes" comment="all done, styles pending in Login.jsx and Register.jsx, some comments too">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/README.md" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/Navbar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Navbar.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/layout/Home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/layout/Home.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/pages/users/Detail.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/pages/users/Detail.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/pages/users/Edit.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/pages/users/Edit.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/pages/users/Show.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/pages/users/Show.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/pages/welcome/Login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/pages/welcome/Login.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/pages/welcome/Register.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/pages/welcome/Register.jsx" afterDir="false" />
     </list>
@@ -247,7 +245,8 @@
       <workItem from="1659470257182" duration="1640000" />
       <workItem from="1659471917106" duration="129000" />
       <workItem from="1659516315286" duration="3312000" />
-      <workItem from="1659526968783" duration="21185000" />
+      <workItem from="1659526968783" duration="21510000" />
+      <workItem from="1659601393813" duration="2034000" />
     </task>
     <task id="LOCAL-00001" summary="first commit!">
       <created>1659372836282</created>
@@ -417,7 +416,21 @@
       <option name="project" value="LOCAL" />
       <updated>1659548000886</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="all done, styles pending in Login.jsx and Register.jsx, some comments too">
+      <created>1659555759178</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1659555759178</updated>
+    </task>
+    <task id="LOCAL-00026" summary="all done, styles pending in Login.jsx and Register.jsx, some comments too">
+      <created>1659555892734</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1659555892734</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -450,6 +463,7 @@
     <MESSAGE value="auth and navbar routing ok" />
     <MESSAGE value="password update now is hashed" />
     <MESSAGE value="better structure of the project" />
-    <option name="LAST_COMMIT_MESSAGE" value="better structure of the project" />
+    <MESSAGE value="all done, styles pending in Login.jsx and Register.jsx, some comments too" />
+    <option name="LAST_COMMIT_MESSAGE" value="all done, styles pending in Login.jsx and Register.jsx, some comments too" />
   </component>
 </project>

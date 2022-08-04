@@ -10,9 +10,16 @@ export const Register = () => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const navigate = useNavigate();
-    /* It checks if the user is logged in */
-    const isLoggedIn = sessionStorage.getItem("token") !== null;
 
+    /* This is checking if the user is logged in. If they are, they are redirected to the users page */
+    const isLoggedIn = sessionStorage.getItem("token") !== null;
+    if (isLoggedIn) {
+        navigate('/users');
+    }
+
+    /**
+     * The function makes a request to the server to register a new user
+     */
     const makeRequest = (e) => {
         e.preventDefault();
 
@@ -28,50 +35,51 @@ export const Register = () => {
         });
     };
 
-    // TODO: Add styles to the form and some comments in the component
     return (
-        <div className="row justify-content-center">
-            <div className="col-md-8">
-                <div className="card">
-                    <div className="card-header">Register</div>
-                    <div className="card-body">
-                        <form method="POST" action="client/src/components/pages/welcome/Register#" onSubmit={makeRequest}>
-                            <div className="row mb-3">
-                                <label className="col-md-4 col-form-label text-md-end">Name</label>
-                                <div className="col-md-6">
-                                    <input id="name" type="text"
-                                           className="form-control" name="name" required autoComplete="name" autoFocus
-                                           value={name} onChange={e => setName(e.target.value)}/>
+        <section>
+            <form onSubmit={makeRequest}>
+                <div className="grid mt-28 place-items-center">
+                    <div className="max-w-xs rounded-md shadow-md dark:bg-gray-900 dark:text-gray-100">
+                        <div className="flex flex-col justify-between p-6 space-y-8">
+                            <div className="space-y-4">
+                                <h2 className="text-3xl font-semibold tracking-wide">Registration</h2>
+                                <div className="col-span-full sm:col-span-3">
+                                    <label htmlFor="name" className="text-sm">Name</label>
+                                    <input id="name" type="text" placeholder="Name" required autoComplete="name"
+                                           autoFocus
+                                           value={name}
+                                           onChange={e => setName(e.target.value)}
+                                           className="w-full rounded-md focus:ring focus:ring-opacity-75 focus:ring-violet-400 dark:border-gray-700 dark:text-gray-900"/>
+                                </div>
+                                <div className="col-span-full sm:col-span-3">
+                                    <label htmlFor="email" className="text-sm">Email</label>
+                                    <input id="email" type="email" placeholder="Email" required autoComplete="email"
+                                           autoFocus
+                                           value={email}
+                                           onChange={e => setEmail(e.target.value)}
+                                           className="w-full rounded-md focus:ring focus:ring-opacity-75 focus:ring-violet-400 dark:border-gray-700 dark:text-gray-900"/>
+                                </div>
+                                <div className="col-span-full sm:col-span-3">
+                                    <label htmlFor="password" className="text-sm">Password</label>
+                                    <input id="password" type="text" placeholder="Password" required
+                                           autoComplete="current-password"
+                                           value={password}
+                                           onChange={e => setPassword(e.target.value)}
+                                           minLength={6}
+                                           className="w-full rounded-md focus:ring focus:ring-opacity-75 focus:ring-violet-400 dark:border-gray-700 dark:text-gray-900"/>
+                                </div>
+                                <div className="col-span-full">
+                                    <div className="flex items-center space-x-2">
+                                        <button type="submit"
+                                                className="px-4 py-2 border rounded-md dark:border-gray-100">Register
+                                        </button>
+                                    </div>
                                 </div>
                             </div>
-                            <div className="row mb-3">
-                                <label className="col-md-4 col-form-label text-md-end">E-Mail Address</label>
-                                <div className="col-md-6">
-                                    <input id="email" type="email"
-                                           className="form-control" name="email" required autoComplete="email"
-                                           value={email} onChange={e => setEmail(e.target.value)}/>
-                                </div>
-                            </div>
-                            <div className="row mb-3">
-                                <label className="col-md-4 col-form-label text-md-end">Password</label>
-                                <div className="col-md-6">
-                                    <input id="password" type="password"
-                                           className="form-control"
-                                           name="password" required autoComplete="new-password" value={password}
-                                           minLength={6} onChange={e => setPassword(e.target.value)}/>
-                                </div>
-                            </div>
-                            <div className="row mb-0">
-                                <div className="col-md-6 offset-md-4">
-                                    <button type="submit" className="btn btn-primary">
-                                        Register
-                                    </button>
-                                </div>
-                            </div>
-                        </form>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
+            </form>
+        </section>
     );
 };

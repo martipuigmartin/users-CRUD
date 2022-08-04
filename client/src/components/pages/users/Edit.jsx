@@ -57,7 +57,7 @@ export const Edit = () => {
                             </p>
                             <p className="dark:text-gray-100">
                                 <label>Password: </label>
-                                <input className="dark:bg-gray-900" type="text" name="password" required/>
+                                <input className="dark:bg-gray-900" type="text" minLength={6} name="password" required/>
                             </p>
                             <button className=" text-white font-bold py-2 px-4 rounded" type="submit">Update</button>
                             <Link className="text-white font-bold py-2 px-4 rounded" to="/users">Go back</Link>
