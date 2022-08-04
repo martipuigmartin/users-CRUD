@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="79a4e2ca-7cb3-465d-8b90-929c907da27a" name="Changes" comment="all done, styles pending in Login.jsx and Register.jsx, some comments too">
+    <list default="true" id="79a4e2ca-7cb3-465d-8b90-929c907da27a" name="Changes" comment="styles pending in Login.jsx and Register.jsx and some comments too done">
+      <change afterPath="$PROJECT_DIR$/client/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Navbar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Navbar.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/pages/users/Detail.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/pages/users/Detail.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/pages/users/Edit.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/pages/users/Edit.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/pages/users/Show.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/pages/users/Show.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/pages/welcome/Login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/pages/welcome/Login.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/pages/welcome/Register.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/pages/welcome/Register.jsx" afterDir="false" />
     </list>
@@ -246,7 +247,7 @@
       <workItem from="1659471917106" duration="129000" />
       <workItem from="1659516315286" duration="3312000" />
       <workItem from="1659526968783" duration="21510000" />
-      <workItem from="1659601393813" duration="2034000" />
+      <workItem from="1659601393813" duration="2668000" />
     </task>
     <task id="LOCAL-00001" summary="first commit!">
       <created>1659372836282</created>
@@ -430,7 +431,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659555892734</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="styles pending in Login.jsx and Register.jsx and some comments too done">
+      <created>1659603708172</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1659603708172</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -464,6 +472,7 @@
     <MESSAGE value="password update now is hashed" />
     <MESSAGE value="better structure of the project" />
     <MESSAGE value="all done, styles pending in Login.jsx and Register.jsx, some comments too" />
-    <option name="LAST_COMMIT_MESSAGE" value="all done, styles pending in Login.jsx and Register.jsx, some comments too" />
+    <MESSAGE value="styles pending in Login.jsx and Register.jsx and some comments too done" />
+    <option name="LAST_COMMIT_MESSAGE" value="styles pending in Login.jsx and Register.jsx and some comments too done" />
   </component>
 </project>

@@ -3,7 +3,6 @@ import axios from 'axios';
 
 import {Link, useNavigate, useParams} from 'react-router-dom';
 
-//TODO: change endPoint to environment variable
 const endPoint = 'http://localhost:8000/api';
 
 export const Edit = () => {
