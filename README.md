@@ -1,5 +1,9 @@
 # Introducció general.
 
+## Important.
+
+Per poder testejar l'aplicació, és necessari crear un usuari, ja que, les contrasenyes dels usuaris generats de prova es troben encriptades en la base de dades. Per testejar els usuaris de prova, és necessari actualitzar la contrasenya, d'aquesta manera, amb la contrasenya i el seu correu, ja podrem accedir amb aquest usuari.
+
 ## Passos per preparar l'entorn.
 
 1. Descarregar Laragon. Laragon és un és una suit de desenvolupament que ens permet tenir entorns, entre ells, un projecte amb Laravel.
