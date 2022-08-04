@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="79a4e2ca-7cb3-465d-8b90-929c907da27a" name="Changes" comment="styles pending in Login.jsx and Register.jsx and some comments too done">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-    </list>
+    <list default="true" id="79a4e2ca-7cb3-465d-8b90-929c907da27a" name="Changes" comment="readme done" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -242,7 +239,7 @@
       <workItem from="1659471917106" duration="129000" />
       <workItem from="1659516315286" duration="3312000" />
       <workItem from="1659526968783" duration="21510000" />
-      <workItem from="1659601393813" duration="5791000" />
+      <workItem from="1659601393813" duration="6113000" />
     </task>
     <task id="LOCAL-00001" summary="first commit!">
       <created>1659372836282</created>
@@ -447,7 +444,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659604457241</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="readme done">
+      <created>1659607360872</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1659607360872</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -482,6 +486,7 @@
     <MESSAGE value="better structure of the project" />
     <MESSAGE value="all done, styles pending in Login.jsx and Register.jsx, some comments too" />
     <MESSAGE value="styles pending in Login.jsx and Register.jsx and some comments too done" />
-    <option name="LAST_COMMIT_MESSAGE" value="styles pending in Login.jsx and Register.jsx and some comments too done" />
+    <MESSAGE value="readme done" />
+    <option name="LAST_COMMIT_MESSAGE" value="readme done" />
   </component>
 </project>
