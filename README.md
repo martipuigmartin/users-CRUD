@@ -39,3 +39,7 @@ DB_PASSWORD=
 1. Dins de la ruta **C:\Laragon\www\users-CRUD\client** executem la comanda **npm install**.
 2. Executem la comanda **npm run start**. Aquesta comanda executarà el client en mode de desenvolupament.
 3. El client ja està disponible a la ruta **http://localhost:3000**.
+
+##Possibles errors
+
+1. Si dona un error d'unknown database** comprovar que la base de dades del .env sigui correcta. Si continua fallant, executa la comanda **php artisan config:clear**. Si això no funciona, borra l'arxiu **bootstrap\cache\config.php**.
