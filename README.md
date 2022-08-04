@@ -42,4 +42,4 @@ DB_PASSWORD=
 
 ## Possibles errors
 
-1. Si dona un error d'unknown database** comprovar que la base de dades del .env sigui correcta. Si continua fallant, executa la comanda **php artisan config:clear**. Si això no funciona, borra l'arxiu **bootstrap\cache\config.php**.
+1. Si dona un error **d'unknown database** comprovar que la base de dades del .env sigui correcta. Si continua fallant, executa la comanda **php artisan config:clear**. Si això no funciona, borra l'arxiu **bootstrap\cache\config.php**.
