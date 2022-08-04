@@ -43,3 +43,10 @@ DB_PASSWORD=
 ## Possibles errors
 
 1. Si dona un error **d'unknown database**, comprovar que la base de dades del .env sigui correcta. Si continua fallant, executa la comanda **php artisan config:clear**. Si això no funciona, borra l'arxiu **bootstrap\cache\config.php**.
+2. Si tenim el següent error:
+```El término 'npm' no se reconoce como nombre de un cmdlet, función, archivo de script o programa ejecutable. Compruebe si escribió 
+correctamente el nombre o, si incluyó una ruta de acceso, compruebe que dicha ruta es correcta e inténtelo de nuevo.
+En línea: 1 Carácter: 1
+```
+Hem d'instal·lar NODE.js, ja que fem servir el gestor NPM per instal·lar les dependències necessàries al client.
+
