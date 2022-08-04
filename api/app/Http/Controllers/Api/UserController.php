@@ -35,6 +35,13 @@ class UserController extends Controller
         if (User::where('email', $request->email)->where('id', '!=', $id)->exists()) {
             return response()->json(['error' => 'Email already exists'], 400);
         }
+        
+        /* Validating the request data */
+        $this->validate($request, [
+            'name' => 'required',
+            'email' => 'required|email',
+            'password' => 'required|min:6',
+        ]);
 
         $user = User::find($id);
         $user->update([
