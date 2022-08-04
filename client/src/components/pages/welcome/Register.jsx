@@ -61,7 +61,7 @@ export const Register = () => {
                                 </div>
                                 <div className="col-span-full sm:col-span-3">
                                     <label htmlFor="password" className="text-sm">Password</label>
-                                    <input id="password" type="text" placeholder="Password" required
+                                    <input id="password" type="password" placeholder="Password" required
                                            autoComplete="current-password"
                                            value={password}
                                            onChange={e => setPassword(e.target.value)}

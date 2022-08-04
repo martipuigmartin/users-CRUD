@@ -53,7 +53,7 @@ export const Login = () => {
                                 </div>
                                 <div className="col-span-full sm:col-span-3">
                                     <label htmlFor="password" className="text-sm">Password</label>
-                                    <input id="password" type="text" placeholder="Password" required
+                                    <input id="password" type="password" placeholder="Password" required
                                            autoComplete="current-password" value={password}
                                            onChange={e => setPassword(e.target.value)}
                                            className="w-full rounded-md focus:ring focus:ring-opacity-75 focus:ring-violet-400 dark:border-gray-700 dark:text-gray-900"/>
